@@ -3,6 +3,14 @@ RAV begin:
 
 npx create-react-app my-app --template typescript
 
+npx generate-react-cli component MyComponent // generate-react-cli.json
+
+computed properties:
+React.useMemo
+
+TESTS
+jest.spyOn(global, "fetch").mockImplementation(() => Promise.resolve({ json: () => Promise.resolve(fakeUser)}))
+
 RAV end
 
 ## Available Scripts

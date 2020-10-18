@@ -54,7 +54,6 @@ const Board = () => {
     squares,
     xIsNext,
   });
-  
 
   const handleClick = (i: number) => {
     if (state.winner || state.squares[i]) {
@@ -63,13 +62,14 @@ const Board = () => {
 
     const squares = state.squares.slice();
     squares[i] = nextPlayer(state.xIsNext);
-    setState({
-      ...state,
+
+    // RAV: setState merges the object you provide into the current state
+    setState((state) => ({
       squares,
       xIsNext: !state.xIsNext,
       winner: calculateWinner(squares),
       status: getStatus(squares, state.xIsNext),
-    });
+    }));
   };
 
   const renderSquare = (i: number) => (
