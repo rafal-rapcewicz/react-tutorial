@@ -11,6 +11,9 @@ React.useMemo
 TESTS
 jest.spyOn(global, "fetch").mockImplementation(() => Promise.resolve({ json: () => Promise.resolve(fakeUser)}))
 
+How to scope your CSS/SCSS in React JS:
+https://dev.to/viclafouch/how-to-scope-your-css-scss-in-react-js-271a
+
 RAV end
 
 ## Available Scripts
