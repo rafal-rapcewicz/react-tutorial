@@ -14,6 +14,7 @@ jest.spyOn(global, "fetch").mockImplementation(() => Promise.resolve({ json: () 
 How to scope your CSS/SCSS in React JS:
 https://dev.to/viclafouch/how-to-scope-your-css-scss-in-react-js-271a     
 https://blog.bitsrc.io/how-to-use-sass-and-css-modules-with-create-react-app-83fa8b805e5e       
+https://create-react-app.dev/docs/adding-a-css-modules-stylesheet/      
 https://medium.com/@wongni/react-component-styling-sass-and-css-module-and-integrating-api-419b150d64f9     ( needed webpack conf.)      
 
 RAV end
